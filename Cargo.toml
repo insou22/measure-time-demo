@@ -1,0 +1,18 @@
+[package]
+name = "measure_time_package"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "measure_time_bin"
+path = "src/main.rs"
+
+[lib]
+name = "measure_time"
+proc-macro = true
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+syn = { version = "1.0.107", features = ["full"] }
+quote = "1.0.23"
